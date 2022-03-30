@@ -1,0 +1,35 @@
+
+    <div class="navigation">
+      <nav class="navbar navbar-dark  bg-purple">
+          <div class="container-fluid">
+            <span class="navbar-brand float-rigth mb-0 h1"><a (click)="route('start')">bont_id</a></span>
+            <form class="d-flex">
+                <a  class="search" ><i class="bi bi-search"></i></a>
+            </form>
+          </div>
+      </nav>
+    </div>
+
+<!--<video src="video" width="720" height="560"  id="video"> </video> -->
+<div class="container cont">
+  <div class="video">
+    <video  autoplay  id="video"> </video>
+
+  </div>
+  <div class="info">
+    <h4>Résultat de l'identification</h4>
+    <div class="d-flex justify-content-around">
+      <div>
+        <h6>Nom: </h6>
+        <h6>Age: </h6>
+        <h6>sexe: </h6>
+      </div>
+      <div   style="align-items: center; text-align: center;">
+        <br>
+        <div class="spinner-border text-purple" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,166 @@
+.navigation{
+    span{
+      color: black;
+    }
+    i{
+      color: rgba(0, 0, 0, 0.645);
+    }
+}
+
+a{
+  text-decoration: none;
+}
+
+
+.parent-div {
+    // display: inline-block;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .parent-div input[type=file] {
+    left: 0;
+    top: 0;
+    opacity: 0;
+    position: absolute;
+    font-size: 90px;
+  }
+  .container{
+    justify-content: center;
+    text-align: center;
+    padding-top:30px ;
+    .tete{
+      width: 100%;
+      background-image: url("../../assets/fond1.webp") ;
+
+      .image1{
+        width: 30%;
+        margin-bottom:30px ;
+
+      }
+      .image2{
+        margin-top: 30px;
+
+        img{
+          width: 100%;
+        }
+      }
+    }
+
+    .detaille{
+      margin-top: 100px;
+      .img2{
+        width: 600px;
+      }
+      .detail1{
+        text-align: left;
+        margin-right: 50px;
+      }
+      .detail2{
+        text-align: left;
+        margin-left: 50px;
+      }
+    }
+
+    .plus{
+      margin-top: 100px ;
+    }
+
+    .cont{
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+
+      .card {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows:  210px ;
+        grid-template-areas: "text" ;
+        width: 30%;
+        border-radius: 18px;
+
+        box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+        // font-family: roboto;
+        text-align: center;
+        transition: 0.5s ease;
+        // cursor: pointer;
+        // margin:25px;
+        margin-bottom: 20px;
+
+
+          .card-text {
+            grid-area: text;
+            grid-area: text;
+            margin: 25px;
+               p {
+                font-size:15px;
+                font-weight: 300;
+              }
+               h2 {
+                margin-top:0px;
+                font-size:28px;
+              }
+
+
+
+          }
+      }
+
+
+      .card:hover {
+        transform: scale(1.05);
+        box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+      }
+      .Title{
+        color: white;
+        padding: 30px;
+        padding-bottom: 40px;
+        background: linear-gradient(70deg ,#7952b3 ,#46237b ) !important;
+    }
+
+
+  }
+
+
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+  .cont{
+    display:inline;
+  }
+
+  .container{
+    width: 100%;
+    .det{
+      -webkit-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse !important;
+    }
+
+    .detaille{
+      flex-wrap: wrap;
+      .img2{
+        width: 100%;
+      }
+      .img1{
+        width: 100%;
+      }
+      .detail1{
+        text-align: left;
+        margin-bottom: 30px;
+      }
+
+      .detail2{
+        text-align: left;
+        margin-left: 0px;
+        margin-bottom: 30px;
+      }
+    }
+
+}
+
+  }
+

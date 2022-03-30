@@ -1,0 +1,46 @@
+.navigation{
+  span{
+    color: black;
+  }
+  i{
+    color: rgba(0, 0, 0, 0.645);
+  }
+}
+
+a{
+text-decoration: none;
+}
+
+.cont{
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .video{
+    width: 50%;
+    margin-right: 30px;
+    video{
+      width: 100%;
+    }
+  }
+}
+
+
+@media screen and (max-width: 780px) {
+
+  .cont{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .video{
+      margin-bottom: 10px;
+      width: 100%;
+      margin-right: 30px;
+      video{
+        width: 100%;
+      }
+    }
+  }
+
+}

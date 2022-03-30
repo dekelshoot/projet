@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'base';
+  theme = "white"
+  changeTheme(){
+    if(this.theme=="white"){
+      this.theme="dark"
+    }else{
+      this.theme="white"
+    }
+
+  }
 }
